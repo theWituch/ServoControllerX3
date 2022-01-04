@@ -1,3 +1,15 @@
+# 1.2.0
+- the dimensions of the plate have been corrected to 159x73mm (from 157x72mm)
+- PCB dimensions have been corrected to 170x73mm (from 159x72mm), adding one housing module
+- IC3-5 and IC6-8 have been relocated
+- individual voltage fuses for DC / DC converters have been added with LEDs indicating burnout
+- the USB interface has been implemented
+- RX / TX signaling diodes for communication have been added
+- an RS-485 interface with two RJ-45 sockets was implemented instead of the RS-232
+- changed the + -12V converter type from Traco to Aimtec
+- a diode has been added to protect the 3V3 power supply against overvoltage
+
+
 # 1.1.0
 - the error of connecting the encoder interface ENCODER1 has been corrected - the connection of the CH1_QE_x leads has been changed:
 CH1_QE_A> IC9.30

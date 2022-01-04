@@ -3,7 +3,7 @@
 
 ## About
 
-The firmware for the SCX3 controller was written using the MPLABX v4.05 environment.
+The firmware for the SCX3 controller was written using the MPLABX v5.10 environment.
 
 ## Status
 

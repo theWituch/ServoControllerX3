@@ -4,18 +4,11 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>io.h</itemPath>
-      <itemPath>system.h</itemPath>
-      <itemPath>timer.h</itemPath>
-      <itemPath>pwm.h</itemPath>
-      <itemPath>qei.h</itemPath>
-      <itemPath>pid.h</itemPath>
-      <itemPath>uart.h</itemPath>
-      <itemPath>capture.h</itemPath>
-      <itemPath>eeprom.h</itemPath>
-      <itemPath>eeprom_1.h</itemPath>
-      <itemPath>nvm.h</itemPath>
-      <itemPath>eeprom_2.h</itemPath>
+      <itemPath>src/system.h</itemPath>
+      <itemPath>src/memory.h</itemPath>
+      <itemPath>src/qei.h</itemPath>
+      <itemPath>src/pwm.h</itemPath>
+      <itemPath>src/capture.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -24,20 +17,92 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>io.c</itemPath>
-      <itemPath>configuration_bits.c</itemPath>
-      <itemPath>timer1.c</itemPath>
-      <itemPath>timer2.c</itemPath>
-      <itemPath>uart.c</itemPath>
-      <itemPath>pwm.c</itemPath>
-      <itemPath>pid.c</itemPath>
-      <itemPath>main.c</itemPath>
-      <itemPath>capture.c</itemPath>
-      <itemPath>system.c</itemPath>
-      <itemPath>qei.c</itemPath>
-      <itemPath>commands.c</itemPath>
-      <itemPath>tuner.c</itemPath>
-      <itemPath>storage.c</itemPath>
+      <logicalFolder name="driver" displayName="driver" projectFiles="true">
+        <logicalFolder name="crc" displayName="crc" projectFiles="true">
+          <itemPath>src/crc.c</itemPath>
+          <itemPath>src/driver/crc/crc.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="eeprom" projectFiles="true">
+          <itemPath>src/driver/eeprom/eeprom.h</itemPath>
+          <itemPath>src/driver/eeprom/eeprom.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="io" projectFiles="true">
+          <itemPath>src/driver/io/io.h</itemPath>
+          <itemPath>src/driver/io/io.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="modbus" displayName="modbus" projectFiles="true">
+          <logicalFolder name="ascii" displayName="ascii" projectFiles="true">
+            <itemPath>src/driver/modbus/ascii/mbascii.c</itemPath>
+            <itemPath>src/driver/modbus/ascii/mbascii.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="functions" displayName="functions" projectFiles="true">
+            <itemPath>src/driver/modbus/functions/mbfunccoils.c</itemPath>
+            <itemPath>src/driver/modbus/functions/mbfuncdiag.c</itemPath>
+            <itemPath>src/driver/modbus/functions/mbfuncdisc.c</itemPath>
+            <itemPath>src/driver/modbus/functions/mbfuncholding.c</itemPath>
+            <itemPath>src/driver/modbus/functions/mbfuncinput.c</itemPath>
+            <itemPath>src/driver/modbus/functions/mbfuncother.c</itemPath>
+            <itemPath>src/driver/modbus/functions/mbutils.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="include" displayName="include" projectFiles="true">
+            <itemPath>src/driver/modbus/include/mb.h</itemPath>
+            <itemPath>src/driver/modbus/include/mbconfig.h</itemPath>
+            <itemPath>src/driver/modbus/include/mbframe.h</itemPath>
+            <itemPath>src/driver/modbus/include/mbfunc.h</itemPath>
+            <itemPath>src/driver/modbus/include/mbport.h</itemPath>
+            <itemPath>src/driver/modbus/include/mbproto.h</itemPath>
+            <itemPath>src/driver/modbus/include/mbutils.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="rtu" displayName="rtu" projectFiles="true">
+            <itemPath>src/driver/modbus/rtu/mbcrc.c</itemPath>
+            <itemPath>src/driver/modbus/rtu/mbcrc.h</itemPath>
+            <itemPath>src/driver/modbus/rtu/mbrtu.c</itemPath>
+            <itemPath>src/driver/modbus/rtu/mbrtu.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="tcp" displayName="tcp" projectFiles="true">
+            <itemPath>src/driver/modbus/tcp/mbtcp.c</itemPath>
+            <itemPath>src/driver/modbus/tcp/mbtcp.h</itemPath>
+          </logicalFolder>
+          <itemPath>src/driver/modbus/mb.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f1" displayName="pid" projectFiles="true">
+          <itemPath>src/driver/pid/pid.c</itemPath>
+          <itemPath>src/driver/pid/pid.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="rtcc" displayName="rtcc" projectFiles="true">
+          <itemPath>src/driver/rtcc/rtcc.c</itemPath>
+          <itemPath>src/driver/rtcc/rtcc.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="port" displayName="port" projectFiles="true">
+        <logicalFolder name="eeprom" displayName="eeprom" projectFiles="true">
+          <itemPath>src/port/eeprom/port.h</itemPath>
+          <itemPath>src/port/eeprom/hardware.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="io" displayName="io" projectFiles="true">
+          <itemPath>src/port/io/discrete.c</itemPath>
+          <itemPath>src/port/io/port.h</itemPath>
+          <itemPath>src/port/io/analog.c</itemPath>
+          <itemPath>src/port/io/cnotice.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="modbus" displayName="modbus" projectFiles="true">
+          <itemPath>src/port/modbus/event.c</itemPath>
+          <itemPath>src/port/modbus/serial.c</itemPath>
+          <itemPath>src/port/modbus/timer.c</itemPath>
+          <itemPath>src/port/modbus/data.c</itemPath>
+          <itemPath>src/port/modbus/port.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="pid" displayName="pid" projectFiles="true">
+          <itemPath>src/port/pid/port.h</itemPath>
+          <itemPath>src/port/pid/timer.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>src/main.c</itemPath>
+      <itemPath>src/configuration_bits.c</itemPath>
+      <itemPath>src/system.c</itemPath>
+      <itemPath>src/qei.c</itemPath>
+      <itemPath>src/pwm.c</itemPath>
+      <itemPath>src/capture.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -58,11 +123,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.15</languageToolchainVersion>
+        <languageToolchainVersion>2.05</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32MK-MC_DFP" vendor="Microchip" version="1.0.18"/>
+        <pack name="PIC32MK-MC_DFP" vendor="Microchip" version="1.0.22"/>
       </packs>
       <compileType>
         <linkerTool>
@@ -96,7 +161,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value=""/>
+        <property key="extra-include-directories" value="src;src\driver;src\port"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="false"/>
@@ -424,6 +489,7 @@
         <property key="UART5" value="true"/>
         <property key="UART6" value="true"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
@@ -853,7 +919,7 @@
                   value=""/>
         <property key="warningmessagebreakoptions.warningmessages" value="holdstate"/>
       </Simulator>
-      <item path="capture.c" ex="false" overriding="false">
+      <item path="src/driver/rtcc/rtcc.c" ex="true" overriding="false">
         <C32>
         </C32>
         <C32-AR>
@@ -867,7 +933,7 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="commands.c" ex="false" overriding="false">
+      <item path="src/driver/rtcc/rtcc.h" ex="true" overriding="false">
         <C32>
         </C32>
         <C32-AR>
@@ -881,147 +947,7 @@
         <C32Global>
         </C32Global>
       </item>
-      <item path="io.c" ex="false" overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="main.c" ex="false" overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="pid.c" ex="false" overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="pwm.c" ex="false" overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="qei.c" ex="false" overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="storage.c" ex="true" overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="system.c" ex="false" overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="timer1.c" ex="false" overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="timer2.c" ex="true" overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="tuner.c" ex="true" overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="uart.c" ex="false" overriding="false">
+      <item path="src/port/io/cnotice.c" ex="true" overriding="false">
         <C32>
         </C32>
         <C32-AR>

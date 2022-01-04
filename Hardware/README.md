@@ -9,7 +9,9 @@ The hardware for the SCX3 controller was developed using the EAGLE 7.7.0 environ
 
 The project has not been developed for a long time and the content of the repository has not been checked. Therefore, there is no guarantee that the project files will generate a PCB without any additional steps.
 
-Previous version (1.0.0) were tested on a prototype, which contained bugs that were fixed in this version.
+Additionally, this hardware version (1.2.0) has not been tested on the built prototype.
+
+The only version tested on a prototype is 1.0.0 - which contained bugs that were fixed in later versions.
 
 ## License
 
