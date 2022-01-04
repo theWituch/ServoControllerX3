@@ -9,6 +9,8 @@ The hardware for the SCX3 controller was developed using the EAGLE 7.7.0 environ
 
 The project has not been developed for a long time and the content of the repository has not been checked. Therefore, there is no guarantee that the project files will generate a PCB without any additional steps.
 
+Previous version (1.0.0) were tested on a prototype, which contained bugs that were fixed in this version.
+
 ## License
 
 SCX3 Hardware follow [CC-BY-NC-SA-4.0 license](LICENSE). Thus, those compounds are freely available for academic purpose or individual research, but restricted for commecial use.

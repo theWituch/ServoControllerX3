@@ -1,0 +1,190 @@
+Partlist
+
+Exported from SCX3.sch at 2019-03-10 19:41
+
+EAGLE Version 7.7.0 Copyright (c) 1988-2016 CadSoft
+
+Assembly variant: 
+
+Part      Value             Device            Package           Library         Sheet
+
+C1        330uF             CPOL-EUE5-10.5    E5-10,5           rcl             1
+C2        220uF             CPOL-EUE5-10.5    E5-10,5           rcl             1
+C3        10uF              CPOL-EUUD-4X5,8   UD-4X5,8_NICHICON rcl             1
+C4        1uF               C-EUC0805         C0805             rcl             1
+C5        1nF/1KV           C-EUC0805         C0805             rcl             1
+C6        1nF/1KV           C-EUC0805         C0805             rcl             1
+C7        10uF              C-EUC0805         C0805             rcl             1
+C8        1uF               C-EUC0805         C0805             rcl             1
+C9        1uF               C-EUC0805         C0805             rcl             1
+C10       10uF              C-EUC0805         C0805             rcl             1
+C11       100n              C-EUC0805         C0805             rcl             2
+C12       100n              C-EUC0805         C0805             rcl             2
+C13       100n              C-EUC0805         C0805             rcl             2
+C14       100n              C-EUC0805         C0805             rcl             2
+C15       10uF              C-EUC0805         C0805             rcl             4
+C16       10uF              C-EUC0805         C0805             rcl             4
+C17       10uF              C-EUC0805         C0805             rcl             4
+C18       10n               C-EUC0805         C0805             rcl             5
+C19       10n               C-EUC0805         C0805             rcl             5
+C20       10n               C-EUC0805         C0805             rcl             5
+C21       33n               C-EUC0805         C0805             rcl             5
+C22       33n               C-EUC0805         C0805             rcl             5
+C23       33n               C-EUC0805         C0805             rcl             5
+C24       33n               C-EUC0805         C0805             rcl             5
+C25       33n               C-EUC0805         C0805             rcl             5
+C26       33n               C-EUC0805         C0805             rcl             5
+C27       10n               C-EUC0805         C0805             rcl             5
+C28       10n               C-EUC0805         C0805             rcl             5
+C29       10n               C-EUC0805         C0805             rcl             5
+C30       33n               C-EUC0805         C0805             rcl             5
+C31       33n               C-EUC0805         C0805             rcl             5
+C32       33n               C-EUC0805         C0805             rcl             5
+C33       100n              C-EUC0805         C0805             rcl             6
+C34       100n              C-EUC0805         C0805             rcl             6
+C35       100n              CPOL-EUUD-4X5,8   UD-4X5,8_NICHICON rcl             6
+C36       100n              C-EUC0805         C0805             rcl             6
+C37       100n              C-EUC0805         C0805             rcl             6
+C38       100n              C-EUC0805         C0805             rcl             7
+C39       100n              C-EUC0805         C0805             rcl             7
+C40       100n              C-EUC0805         C0805             rcl             7
+C41       100n              C-EUC0805         C0805             rcl             7
+C42       100n              C-EUC0805         C0805             rcl             7
+C43       100n              C-EUC0805         C0805             rcl             7
+C44       100n              C-EUC0805         C0805             rcl             7
+C45       27p               C-EUC0805         C0805             rcl             7
+C46       27p               C-EUC0805         C0805             rcl             7
+D1        1N4148SMD-0805    1N4148SMD-0805    D0805             diode           2
+ENCODER1                    F09VP             F09VP             ServoController 4
+ENCODER2                    F09VP             F09VP             ServoController 4
+ENCODER3                    F09VP             F09VP             ServoController 4
+F1        3A                SH22,5            SH22,5            fuse            1
+IC1       MAX604            MAX604            DIL08             ServoController 1
+IC2       ULN2074BN         ULN2074BN         DIL16             uln-udn         2
+IC3       LM339D            LM339D            SO14              linear          4
+IC4       LM339D            LM339D            SO14              linear          4
+IC5       LM339D            LM339D            SO14              linear          4
+IC6       LM324N            LM324N            DIL14             ServoController 5
+IC7       LM324N            LM324N            DIL14             ServoController 5
+IC8       LM324N            LM324N            DIL14             ServoController 5
+IC9       MAX3221CAE        MAX3221CAE        SSOP16            ServoController 6
+IC10      PIC32MK1024MCF064 PIC32MK1024MCF064 QFN64-9X9         ServoController 7
+IC11      M95040            M95040            SO8               SCX3            7
+ICSP      ICSP              JP5E              JP5               ServoController 7
+INTERFACE                   F25VP             F25VP             con-subd        3
+K1        G6K-2P-Y          G6K-2P-Y          G6K-2P-Y          ServoController 2
+L1        4,7uH             DJNR6028--S       DJNR6028          ServoController 1
+LED1      LED 24V           LEDSML1206        SML1206           led             1
+LED2      LED +12V          LEDSML1206        SML1206           led             1
+LED3      LED 5V            LEDSML1206        SML1206           led             1
+LED4      LED 3V3           LEDSML1206        SML1206           led             1
+LED5      LED -12V          LEDSML1206        SML1206           led             1
+LED6      LED READY         LEDSML1206        SML1206           led             7
+LED7      LED STATE         LEDSML1206        SML1206           led             7
+LED8      LED ERROR         LEDSML1206        SML1206           led             7
+OK1       LTV844            LTV844            DIL16             ServoController 2
+OK2       TLP2662F          TLP2662F          DIL08             ServoController 3
+OK3       TLP2662F          TLP2662F          DIL08             ServoController 3
+OK4       TLP2662F          TLP2662F          DIL08             ServoController 3
+OUTPUT                      F09VP             F09VP             ServoController 5
+POWER     12/24V_CON        AK500/2           AK500/2           con-ptr500      1
+Q1        BC848SMD          BC848SMD          SOT23             transistor-npn  2
+Q2        20MHz 18pF        CRYSTALSM49       SM49              crystal         7
+R1        2K2               R-EU_R1206        R1206             rcl             1
+R2        1K                R-EU_R0805        R0805             rcl             1
+R3        1K                R-EU_R0805        R0805             rcl             1
+R4        330               R-EU_R0805        R0805             rcl             1
+R5        100               R-EU_R0805        R0805             rcl             1
+R6        1K                R-EU_R0805        R0805             rcl             2
+R7        1K                R-EU_R0805        R0805             rcl             2
+R8        1K                R-EU_R0805        R0805             rcl             2
+R9        1K                R-EU_R0805        R0805             rcl             2
+R10       4K7               R-EU_R0805        R0805             rcl             2
+R11       4K7               R-EU_R0805        R0805             rcl             2
+R12       4K7               R-EU_R0805        R0805             rcl             2
+R13       4K7               R-EU_R0805        R0805             rcl             2
+R14       4K7               R-EU_R0805        R0805             rcl             2
+R15       470               R-EU_R0805        R0805             rcl             3
+R16       470               R-EU_R0805        R0805             rcl             3
+R17       470               R-EU_R0805        R0805             rcl             3
+R18       470               R-EU_R0805        R0805             rcl             3
+R19       4K7               R-EU_R0805        R0805             rcl             3
+R20       4K7               R-EU_R0805        R0805             rcl             3
+R21       4K7               R-EU_R0805        R0805             rcl             3
+R22       4K7               R-EU_R0805        R0805             rcl             3
+R23       470               R-EU_R0805        R0805             rcl             3
+R24       470               R-EU_R0805        R0805             rcl             3
+R25       4K7               R-EU_R0805        R0805             rcl             3
+R26       4K7               R-EU_R0805        R0805             rcl             3
+R27       4K7               R-EU_R0805        R0805             rcl             4
+R28       4K7               R-EU_R0805        R0805             rcl             4
+R29       4K7               R-EU_R0805        R0805             rcl             4
+R30       1K                R-EU_R0805        R0805             rcl             4
+R31       470               R-EU_R0805        R0805             rcl             4
+R32       4K7               R-EU_R0805        R0805             rcl             4
+R33       4K7               R-EU_R0805        R0805             rcl             4
+R34       4K7               R-EU_R0805        R0805             rcl             4
+R35       4K7               R-EU_R0805        R0805             rcl             4
+R36       4K7               R-EU_R0805        R0805             rcl             4
+R37       4K7               R-EU_R0805        R0805             rcl             4
+R38       22K               R-EU_R0805        R0805             rcl             5
+R39       22K               R-EU_R0805        R0805             rcl             5
+R40       22K               R-EU_R0805        R0805             rcl             5
+R41       22K               R-EU_R0805        R0805             rcl             5
+R42       22K               R-EU_R0805        R0805             rcl             5
+R43       22K               R-EU_R0805        R0805             rcl             5
+R44       10K               R-EU_R0805        R0805             rcl             5
+R45       10K               R-EU_R0805        R0805             rcl             5
+R46       10K               R-EU_R0805        R0805             rcl             5
+R47       10K               R-EU_R0805        R0805             rcl             5
+R48       10K               R-EU_R0805        R0805             rcl             5
+R49       10K               R-EU_R0805        R0805             rcl             5
+R50       22K               R-EU_R0805        R0805             rcl             5
+R51       22K               R-EU_R0805        R0805             rcl             5
+R52       22K               R-EU_R0805        R0805             rcl             5
+R53       22K               R-EU_R0805        R0805             rcl             5
+R54       22K               R-EU_R0805        R0805             rcl             5
+R55       22K               R-EU_R0805        R0805             rcl             5
+R56       47K               R-EU_R0805        R0805             rcl             5
+R57       22K               R-EU_R0805        R0805             rcl             5
+R58       22K               R-EU_R0805        R0805             rcl             5
+R59       47K               R-EU_R0805        R0805             rcl             5
+R60       47K               R-EU_R0805        R0805             rcl             5
+R61       22K               R-EU_R0805        R0805             rcl             5
+R62       22K               R-EU_R0805        R0805             rcl             5
+R63       47K               R-EU_R0805        R0805             rcl             5
+R64       47K               R-EU_R0805        R0805             rcl             5
+R65       22K               R-EU_R0805        R0805             rcl             5
+R66       22K               R-EU_R0805        R0805             rcl             5
+R67       47K               R-EU_R0805        R0805             rcl             5
+R68       47K               R-EU_R0805        R0805             rcl             5
+R69       47K               R-EU_R0805        R0805             rcl             5
+R70       47K               R-EU_R0805        R0805             rcl             5
+R71       47K               R-EU_R0805        R0805             rcl             5
+R72       47K               R-EU_R0805        R0805             rcl             5
+R73       47K               R-EU_R0805        R0805             rcl             5
+R74       22K               R-EU_R0805        R0805             rcl             5
+R75       22K               R-EU_R0805        R0805             rcl             5
+R76       22K               R-EU_R0805        R0805             rcl             5
+R77       10K               R-EU_R0805        R0805             rcl             7
+R78       1K                R-EU_R0805        R0805             rcl             7
+R79       100               R-EU_R0805        R0805             rcl             7
+R80       100               R-EU_R0805        R0805             rcl             7
+R81       100               R-EU_R0805        R0805             rcl             7
+R82       4K7               R-EU_R0805        R0805             rcl             7
+R83       4K7               R-EU_R0805        R0805             rcl             7
+R84       4K7               R-EU_R0805        R0805             rcl             7
+READY     READY             AK500/3           AK500/3           con-ptr500      2
+RS232     RJ-9              RJ-9              RJ-9              SCX3            6
+SJ1                         SJ                SJ                jumper          2
+SJ2                         SJ                SJ                jumper          4
+SJ3                         SJ                SJ                jumper          4
+SJ4                         SJ                SJ                jumper          4
+SJ5                         SJ                SJ                jumper          4
+SJ6                         SJ                SJ                jumper          4
+SJ7                         SJ                SJ                jumper          4
+SJ8                         SJ                SJ                jumper          4
+SJ9                         SJ                SJ                jumper          4
+SJ10                        SJ                SJ                jumper          4
+U1        AM6T-2412D-NZ     AM6T-2412D-NZ     AM6T              SCX3            1
+U2        AM10CW-2405S-NZ   AM10CW-2405S-NZ   AM10CW-NZ         ServoController 1
