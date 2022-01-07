@@ -1,3 +1,6 @@
+#
+- rotated encoders gate transoptors for more space
+
 # 1.2.0
 - the dimensions of the plate have been corrected to 159x73mm (from 157x72mm)
 - PCB dimensions have been corrected to 170x73mm (from 159x72mm), adding one housing module
