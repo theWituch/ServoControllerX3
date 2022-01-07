@@ -1,5 +1,5 @@
 # SCX3 Hardware
-3 Axis Closed-Loop Speed Controller Hardware
+3 Axis **Open-Loop STEP/DIR Position Control** to **Closed-Loop +/-10V Speed Control** Interface - Hardware
 
 ## About
 
